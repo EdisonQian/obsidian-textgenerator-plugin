@@ -592,7 +592,7 @@ export default class ContextManager {
       headings: HeadingCache[] | undefined;
     })[] = [];
     const links = fileCache?.links?.filter(
-      (e) => e.original.substring(0, 2) === "[["
+      (e) => e.original.substring(0, 3) === "![["
     );
     //remove duplicates from links
     const uniqueLinks = links?.filter(
